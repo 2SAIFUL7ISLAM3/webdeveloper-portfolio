@@ -6,17 +6,26 @@
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
-
+.nav-container{
+  background-color: rgb(148, 196, 196)
   
-  .header-all{
-    background-image: url("images/320695836_5907553112663724_8004835940462316619_n.jpg");
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
-  }
+}
+.nav-logo{
+height:100px;
+width: 100px;
+border-radius:5px;
+}
+.logo-title{
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  align-items: center;
+  padding-left: 0px;
+}
   nav {display: flex;
       justify-content: space-between;
       margin: 0px 200px;
+      align-items: center;
   }
   nav>ul{
     display: flex;
@@ -30,12 +39,18 @@
 
   nav a {
     text-decoration: none;
-    color: whitesmoke;
+    color: teal;
 }
 
 .banner-container {
-  display: flex;
+  background-image: url("images/320695836_5907553112663724_8004835940462316619_n.jpg"),
+  linear-gradient(rgba(91, 128, 81, 0.8),rgba(73, 184, 185, 0.7));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
   align-items: center;
+  display: flex;
   justify-content: space-between;
 }
 .banner-content {
@@ -44,22 +59,23 @@
 
 .banner-greeting {
   font-size: 45px;
-  color: #474747;
+  color: rgb(85, 74, 95);
   margin-bottom: 0;
 }
 
 .banner-title {
   font-size: 85px;
-  font-weight: 700;
-  margin-top: 5px;
-  margin-bottom: 20px;
+}
+.banner-description{font-size: medium;
+  font-family:'Courier New', Courier, monospace;
+  font-style: italic;
+  color: rgb(37, 36, 37);
+
 }
 .profile-pic {
   width: 300px;
   border-radius: 25px;
 }
-.messi-pc{
-  padding: 0px;
-  margin-bottom: 0px;
-  border: 0px;
-margin-left: 0px;}
+.banner-pic{
+padding-bottom: 0px;
+}
